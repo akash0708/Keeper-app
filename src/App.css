@@ -8,7 +8,14 @@ body {
   background-color: #eee;
 }
 
+.content-body{
+  display: flex;
+  padding: 1rem 2rem;
+  flex-direction: row;
+}
+
 .header {
+  position: relative;
   background-color: #f5ba13;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   padding: 1rem 1rem;
@@ -29,6 +36,7 @@ body {
 }
 .footer p {
   text-align: center;
+  font-family: 'Poppins';
 }
 
 .note {
@@ -52,4 +60,13 @@ body {
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 480px) {
+  .content-body {
+    flex-direction: column;
+  }
+  .footer {
+    position: relative;
+  }
 }
